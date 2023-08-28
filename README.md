@@ -1,1 +1,1 @@
-# 2024-DS-College-Advantage
+# 2024-Data-Fundamentals
