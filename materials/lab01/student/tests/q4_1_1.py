@@ -1,0 +1,15 @@
+OK_FORMAT = True
+test = {   'name': 'q4_1_1',
+    'points': 1,
+    'suites': [   {   'cases': [   {'code': '>>> # Fill in the line;\n>>> #   num_avenues_away = ...;\n>>> # in the cell above.;\n>>> num_avenues_away != ...\nTrue', 'hidden': False, 'locked': False},
+                                   {   'code': '>>> # Remember to compute the absolute value of 7-10.  Traveling ;\n>>> # "-3 blocks" doesn\'t really make sense!;\n>>> num_avenues_away != -3\nTrue',
+                                       'hidden': False,
+                                       'locked': False,
+                                       "failure_message":"""The provided answer for ``num_avenues_away`` is incorrect. Remember to make use of the ``abs()`` function!"""},
+                                   {'code': '>>> num_avenues_away == 3\nTrue', 'hidden': False, 'locked': False},
+                                   {'code': '>>> manhattan_distance == 1462\nTrue', 'hidden': False, 'locked': False,
+                                    "success_message":"""All answers provided are correct!"""}],
+                      'scored': True,
+                      'setup': '',
+                      'teardown': '',
+                      'type': 'doctest'}]}

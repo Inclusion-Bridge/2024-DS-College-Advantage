@@ -1,0 +1,16 @@
+OK_FORMAT = True
+test = {   'name': 'q21',
+    'points': 1,
+    'suites': [   {   'cases': [   {   'code': '>>> # Make sure you are examining the values in the column, not the column itself;\n>>> import numpy;\n>>> total_pay_type != numpy.ndarray\nTrue',
+                                       'hidden': False,
+                                       'locked': False,
+                                       "failure_message":"""Wrong data type provided. Make sure you are examining the values in the column, not the column itself!"""},
+                                   {'code': ">>> 'str' in str(total_pay_type)\nTrue", 'hidden': False, 'locked': False,
+                                    "failure_message": """Total Pay column should contain string elements. Ensure that you are using the `Total Pay` columns as specified in the instruction."""},
+                                   {'code': '>>> # Make sure to call the type function on a value in the column;\n>>> total_pay_type != int\nTrue', 'hidden': False, 'locked': False,
+                                     "failure_message":"""Wrong data type provided. Make sure to call the ``type`` function on a value in the column!""",
+                                    "success_message":"""All answers provided are correct!"""}],
+                      'scored': True,
+                      'setup': '',
+                      'teardown': '',
+                      'type': 'doctest'}]}

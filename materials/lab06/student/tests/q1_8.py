@@ -1,0 +1,16 @@
+OK_FORMAT = True
+test = {   'name': 'q1_8',
+    'points': 1,
+    'suites': [   {   'cases': [   {'code': '>>> len(simulated_statistics) == 1000\nTrue', 'hidden': False, 'locked': False,
+                                    "failure_message":"""Incorrect: Check the length of `model_proportions`. Expected 1000 elements in the list."""},
+                                   {'code': '>>> np.all(simulated_statistics <= 30)\nTrue', 'hidden': False, 'locked': False,
+                                    "failure_message":"""Incorrect: Some of the content of `model_proportions` is wrong. Expected every element in the list to be less than or equal to 30."""},
+                                   {'code': '>>> np.all(simulated_statistics >= 0)\nTrue', 'hidden': False, 'locked': False,
+                                    "failure_message":"""Incorrect: Every element of the `simulated_statistics` list is expected to be zero or positive."""},
+                                   {'code': '>>> 0 <= simulation_and_statistic(model_proportions, expected_proportion_correct) <= 25\nTrue', 'hidden': False, 'locked': False,
+                                    "failure_message":"""The output of your `simulation_and_statistic` function is incorrect!""",
+                                     "success_message":"""All answers provided are correct!"""}],
+                      'scored': True,
+                      'setup': '',
+                      'teardown': '',
+                      'type': 'doctest'}]}

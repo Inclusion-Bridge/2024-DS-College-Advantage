@@ -1,0 +1,17 @@
+OK_FORMAT = True
+test = {   'name': 'q1_7',
+    'points': 1,
+    'suites': [   {   'cases': [   {'code': '>>> len(model_proportions) % 2 == 0\nTrue', 'hidden': False, 'locked': False,
+                                    "failure_message":"""Incorrect: Check the length of `model_proportions`. Length of list should be even."""},
+                                   {'code': '>>> len(np.unique(model_proportions)) == 1\nTrue', 'hidden': False, 'locked': False},
+                                   {'code': '>>> sum(model_proportions) == 1\nTrue', 'hidden': False, 'locked': False,
+                                    "failure_message":"""Incorrect: Check the elements of `model_proportions`. Proportions are expected to sum up to one."""},
+                                   {'code': '>>> type(simulation_proportion_correct) == float\nTrue', 'hidden': False, 'locked': False,
+                                    "failure_message":"""Incorrect data type: the value of `simulation_proportion_correct` is expected to be a floating number (decimal)!"""},
+                                   {'code': '>>> 0 <= one_statistic <= 25\nTrue', 'hidden': False, 'locked': False,
+                                    "failure_message":"""Incorrect: the value of `one_statistic` is expected to lie between 0 and 25!""",
+                                     "success_message":"""All answers provided are correct!"""}],
+                      'scored': True,
+                      'setup': '',
+                      'teardown': '',
+                      'type': 'doctest'}]}
