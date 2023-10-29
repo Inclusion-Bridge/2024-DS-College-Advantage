@@ -27,12 +27,18 @@ test = {   'name': 'q3_1_2',
                                    {   'code': ">>> # It looks like you didn't account for leap years.;\n"
                                                '>>> # There were 2 leap years and 8 non-leap years in this period.;\n'
                                                '>>> # Leap years have 366 days instead of 365.;\n'
-                                               '>>> seconds_in_a_decade != 315360000\n'
+                                               '>>> (seconds_in_a_decade != 315360000) & (seconds_in_a_decade != ...)\n'
                                                'True',
                                        'hidden': False,
                                        'locked': False,
                                        "failure_message":"""It looks like you didn't account for leap years.\n There were 2 leap years and 8 non-leap years in this period. \
-                                         Leap years have 366 days instead of 365.For example, this is almost right:\n ``seconds_in_a_decade = 10*365*24*60*60.``"""}],
+                                         Leap years have 366 days instead of 365.For example, this is almost right:\n ``seconds_in_a_decade = 10*365*24*60*60.``"""},
+                                 {   'code': '>>> seconds_in_a_decade == 315532800\n'
+                                               'True',
+                                       'hidden': False,
+                                       'locked': False,
+                                       "failure_message":"""The provided value for ``seconds_in_a_decade`` is incorrect. Kindly check the information provided in the previous cell.""",
+                                       "success_message": "The provided answer is correct!"}],
                       'scored': True,
                       'setup': '',
                       'teardown': '',
