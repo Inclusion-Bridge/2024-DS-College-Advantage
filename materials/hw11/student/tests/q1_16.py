@@ -1,4 +1,9 @@
 OK_FORMAT = True
 test = {   'name': 'q1_16',
     'points': 1,
-    'suites': [{'cases': [{'code': '>>> type(greatest_career_length_residual) == str\nTrue', 'hidden': False, 'locked': False}], 'scored': True, 'setup': '', 'teardown': '', 'type': 'doctest'}]}
+    'suites': [   {   'cases': [   {'code': '>>> type(greatest_career_length_residual) == str\nTrue', 'hidden': False, 'locked': False},
+                                   {'code': ">>> greatest_career_length_residual == 'Tom Brady'\nTrue", 'hidden': True, 'locked': False}],
+                      'scored': True,
+                      'setup': '',
+                      'teardown': '',
+                      'type': 'doctest'}]}
